@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import SignUp from "./components/Sign_Up";
+import Notification from "./components/Notification";
+import AppointmentForm from "./components/AppointmentForm";
+import AppointmentFormIC from "./components/AppointmentFormIC";
+import ProfileCard from "./components/ProfileCard";
+import GiveReviews from "./components/GiveReviews";
+import DoctorCard from "./components/DoctorCard";
+import FindDoctorSearch from "./components/FindDoctorSearch";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Notification />
+      <Login />
+      <SignUp />
+      <AppointmentForm />
+      <AppointmentFormIC />
+      <ProfileCard />
+      <GiveReviews />
+      <DoctorCard />
+      <FindDoctorSearch />
     </div>
   );
 }
